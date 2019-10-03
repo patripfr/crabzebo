@@ -1,7 +1,7 @@
 <p align="left" width="100%">
   <img style="width:30%;align:left" src="https://github.com/patripfr/crabzebo/blob/master/img/crabzebo.png">             
 </p>
-# Crabzebo Window Opener
+### Crabzebo Window Opener
 Adapted from Window Blind example at [esp-homekit-demo](https://github.com/maximkulkin/esp-homekit).
 
 ## Usage
