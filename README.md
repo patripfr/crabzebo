@@ -1,6 +1,5 @@
-# esp-homekit-demo
-Demo of [Apple HomeKit accessory server
-library](https://github.com/maximkulkin/esp-homekit).
+# Crabzebo Window Opener
+Adapted from Window Blind example at [esp-homekit-demo](https://github.com/maximkulkin/esp-homekit).
 
 ## Usage
 
@@ -34,54 +33,22 @@ git submodule update --init --recursive
 make -C examples/led all
 ```
 8. Set ESPPORT environment variable pointing to USB device your ESP8266 is attached
-   to (assuming your device is at /dev/tty.SLAB_USBtoUART):
+   to (assuming your device is at /dev/ttyUSB0):
 ```shell
-export ESPPORT=/dev/tty.SLAB_USBtoUART
+export ESPPORT=/dev/ttyUSB0
 ```
 9. To prevent any effects from previous firmware (e.g. firmware crashing right at
    start), highly recommend to erase flash:
 ```shell
-    make -C examples/led erase_flash
+    make -C window_blind erase_flash
 ```
 10. Upload firmware to ESP:
 ```shell
-    make -C examples/led test
+    make -C window_blind test
 ```
   or
 ```shell
-    make -C examples/led flash
-    make -C examples/led monitor
-```
-
-## ESP32
-
-
-1. Initialize and sync all submodules (recursively):
-```shell
-git submodule update --init --recursive
-```
-2. Copy wifi.h.sample -> wifi.h and edit it with correct WiFi SSID and password.
-3. Install [esp-idf](https://github.com/espressif/esp-idf) by following [instructions on esp-idf project page](https://github.com/espressif/esp-idf#setting-up-esp-idf). At the end you should have xtensa-esp32-elf toolchain in your path and IDF_PATH environment variable pointing to esp-idf directory.
-
-4. Configure project:
-```
-make -C examples/esp32/led menuconfig
-```
-There are many settings there, but at least you should configure "Serial flasher config -> Default serial port".
-Also, check "Components -> HomeKit" menu section.
-
-5. Build example:
-```shell
-make -C examples/esp32/led all
-```
-6. To prevent any effects from previous firmware (e.g. firmware crashing right at
-   start), highly recommend to erase flash:
-```shell
-    make -C examples/esp32/led erase_flash
-```
-7. Upload firmware to ESP32:
-```shell
-    make -C examples/esp32/led flash
-    make -C examples/esp32/led monitor
+    make -C window_blind flash
+    make -C window_blind monitor
 ```
 
