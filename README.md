@@ -1,5 +1,5 @@
-<p align="left" width="60%">
-    <img style="width:10% ;align:left" src="https://github.com/patripfr/crabzebo/blob/master/img/crabzebo.png"> 
+<p align="left">
+    <img src="https://github.com/patripfr/crabzebo/blob/master/img/crabzebo.png" width="550" />
 </p>
 
 
@@ -35,7 +35,7 @@ git submodule update --init --recursive
     (see issue #80)
 7. Build example:
 ```shell
-make -C window_blind all
+make -C window_covering all
 ```
 8. Set ESPPORT environment variable pointing to USB device your ESP8266 is attached
    to (assuming your device is at /dev/ttyUSB0):
@@ -45,15 +45,15 @@ export ESPPORT=/dev/ttyUSB0
 9. To prevent any effects from previous firmware (e.g. firmware crashing right at
    start), highly recommend to erase flash:
 ```shell
-    make -C window_blind erase_flash
+    make -C window_covering erase_flash
 ```
 10. Upload firmware to ESP:
 ```shell
-    make -C window_blind test
+    make -C window_covering test
 ```
   or
 ```shell
-    make -C window_blind flash
-    make -C window_blind monitor
+    make -C window_covering flash
+    make -C window_covering monitor
 ```
 
