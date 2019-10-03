@@ -1,12 +1,11 @@
-<p align="left" width="100%">
-<img align="left" width="500" src="https://github.com/patripfr/crabzebo/blob/master/img/crabzebo.png">
-</p>
-<br/><br/>
-
-
-
 # Crabzebo Window Opener
 Adapted from Window Blind example at [esp-homekit-demo](https://github.com/maximkulkin/esp-homekit).
+
+<img align="left" width="500" src="https://github.com/patripfr/crabzebo/blob/master/img/crabzebo.png">
+
+
+
+
 
 ## Usage
 
