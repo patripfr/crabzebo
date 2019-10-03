@@ -1,7 +1,11 @@
 <p align="left" width="100%">
-  <img style="width:30%;align:left" src="https://github.com/patripfr/crabzebo/blob/master/img/crabzebo.png">             
+<img align="left" width="500" src="https://github.com/patripfr/crabzebo/blob/master/img/crabzebo.png">
 </p>
-### Crabzebo Window Opener
+<br/><br/>
+
+
+
+# Crabzebo Window Opener
 Adapted from Window Blind example at [esp-homekit-demo](https://github.com/maximkulkin/esp-homekit).
 
 ## Usage
@@ -33,7 +37,7 @@ git submodule update --init --recursive
     (see issue #80)
 7. Build example:
 ```shell
-make -C examples/led all
+make -C window_blind all
 ```
 8. Set ESPPORT environment variable pointing to USB device your ESP8266 is attached
    to (assuming your device is at /dev/ttyUSB0):
